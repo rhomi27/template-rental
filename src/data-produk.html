@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Admin</title>
+    <link rel="stylesheet" href="/node_modules/simple-datatables/dist/style.css">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-50 text-white">
+
+    <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar"
+        aria-controls="sidebar-multi-level-sidebar" type="button"
+        class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+            </path>
+        </svg>
+    </button>
+
+    <aside id="sidebar-multi-level-sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-blue-500 dark:bg-gray-800">
+            <h1 class="text-lg text-center text-white font-semibold">Admin AmpuStudio</h1>
+            <hr class="mb-5">
+            <ul class="space-y-2 font-medium">
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-blue-950 dark:hover:bg-gray-700 group">
+
+                        <span class="ms-3">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-blue-950 dark:hover:bg-gray-700 group">
+
+                        <span class="flex-1 ms-3 whitespace-nowrap">Data Produk</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-white rounded-lg dark:text-white hover:bg-blue-950 dark:hover:bg-gray-700 group">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Kontak Edit</span>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="p-4 sm:ml-64">
+        <div class="p-4 border-2 border-gray-200 rounded-lg dark:border-gray-700">
+            <!-- Canvas for the Chart -->
+            <div class="w-full flex justify-between ">
+                <h1 class="font-bold text-lg text-black">Data Produk</h1>
+                <a class="bg-blue-600 p-2 rounded-md w-auto" href="addproduk.html">
+                    <h1 class="hidden sm:flex">Tambah</h1>
+                    <h1 class="flex sm:hidden">+</h1>
+                </a>
+            </div>
+
+            <!-- Table for the Sales Data -->
+            <div class="w-full">
+
+                <table id="search-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="flex items-center">
+                                    Nama Produk
+                                </span>
+                            </th>
+                            <th>
+                                <span class="flex items-center">
+                                    Kode Produk
+                                </span>
+                            </th>
+                            <th>
+                                <span class="flex items-center">
+                                    Stok
+                                </span>
+                            </th>
+                            <th>
+                                <span class="flex items-center">
+                                    Harga
+                                </span>
+                            </th>
+                            <th>
+                                <span class="flex items-center">
+                                    Spesifikasi
+                                </span>
+                            </th>
+                            <th>
+                                <span class="flex items-center">
+                                    Kualitas
+                                </span>
+                            </th>
+                            <th>
+                                <span class="flex items-center">
+                                    Deskripsi
+                                </span>
+                            </th>
+                            <th>
+                                <span class="flex items-center">
+                                    Aksi
+                                </span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple Inc.</td>
+                            <td>AAPL1344</td>
+                            <td>200</td>
+                            <td>Rp.23.999.999,00</td>
+                            <td>Ram 8gb a18 Bionic</td>
+                            <td>Ok</td>
+                            <td class="line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Nesciunt,
+                                soluta ad totam
+                                explicabo maxime non voluptas labore aperiam sed beatae debitis at provident et. Dolor
+                                corrupti laborum ea veniam distinctio.</td>
+                            <td>
+                                <div class="flex gap-2">
+                                    <a href="" class="bg-blue-500 p-1 px-2 rounded-md text-white">Detail</a>
+                                    <a href="" class="bg-green-500 p-1 px-2 rounded-md text-white">Edit</a>
+                                    <a href="" class="bg-red-500 p-1 px-2 rounded-md text-white">Hapus</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple Inc.</td>
+                            <td>AAPL1344</td>
+                            <td>200</td>
+                            <td>Rp.23.999.999,00</td>
+                            <td>Ram 8gb a18 Bionic</td>
+                            <td>Ok</td>
+                            <td class="line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Nesciunt,
+                                soluta ad totam
+                                explicabo maxime non voluptas labore aperiam sed beatae debitis at provident et. Dolor
+                                corrupti laborum ea veniam distinctio.</td>
+                            <td>
+                                <div class="flex gap-2">
+                                    <a href="" class="bg-blue-500 p-1 px-2 rounded-md text-white">Detail</a>
+                                    <a href="" class="bg-green-500 p-1 px-2 rounded-md text-white">Edit</a>
+                                    <a href="" class="bg-red-500 p-1 px-2 rounded-md text-white">Hapus</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="font-medium text-gray-900 whitespace-nowrap dark:text-white">Apple Inc.</td>
+                            <td>AAPL1344</td>
+                            <td>200</td>
+                            <td>Rp.23.999.999,00</td>
+                            <td>Ram 8gb a18 Bionic</td>
+                            <td>Ok</td>
+                            <td class="line-clamp-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Nesciunt,
+                                soluta ad totam
+                                explicabo maxime non voluptas labore aperiam sed beatae debitis at provident et. Dolor
+                                corrupti laborum ea veniam distinctio.</td>
+                            <td>
+                                <div class="flex gap-2">
+                                    <a href="" class="bg-blue-500 p-1 px-2 rounded-md text-white">Detail</a>
+                                    <a href="" class="bg-green-500 p-1 px-2 rounded-md text-white">Edit</a>
+                                    <a href="" class="bg-red-500 p-1 px-2 rounded-md text-white">Hapus</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/datatables.js"></script>
+    <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+    <script>
+
+        if (document.getElementById("search-table") && typeof simpleDatatables.DataTable !== 'undefined') {
+            const dataTable = new simpleDatatables.DataTable("#search-table", {
+                searchable: true,
+                sortable: false
+            });
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Produk</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex justify-center items-center">
+        <div class="bg-white w-full">
+            <div class="flex justify-between p-3 px-6 bg-blue-500 w-full items-center mb-4">
+                <h1 class="text-xl font-semibold text-white">Tambah Produk</h1>
+                <a href="#" class="text-white hover:underline">Kembali</a>
+            </div>
+            <form action="#" method="POST" class="p-8 w-4/5">
+                <div class="mb-4">
+                    <label class="block text-gray-600 mb-2">Nama Produk</label>
+                    <input type="text" name="nama_produk"
+                        class="w-full p-3 rounded bg-gray-200 border border-gray-300 focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-600 mb-2">Spesifikasi</label>
+                    <input type="text" name="spesifikasi"
+                        class="w-full p-3 rounded bg-gray-200 border border-gray-300 focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-600 mb-2">Stok</label>
+                    <input type="number" name="stok"
+                        class="w-full p-3 rounded bg-gray-200 border border-gray-300 focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-600 mb-2">Harga</label>
+                    <input type="text" name="harga"
+                        class="w-full p-3 rounded bg-gray-200 border border-gray-300 focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-600 mb-2">Kualitas</label>
+                    <input type="text" name="kualitas"
+                        class="w-full p-3 rounded bg-gray-200 border border-gray-300 focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-600 mb-2">Deskripsi</label>
+                    <textarea name="deskripsi" rows="3"
+                        class="w-full p-3 rounded bg-gray-200 border border-gray-300 focus:outline-none focus:border-blue-500"></textarea>
+                </div>
+                <div class="mb-4">
+
+                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Upload
+                        file</label>
+                    <input
+                        class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                        aria-describedby="file_input_help" id="file_input" type="file">
+                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">SVG, PNG, JPG or GIF
+                        (MAX. 800x400px).</p>
+
+                </div>
+                <div class="flex justify-end">
+                    <button type="submit"
+                        class="bg-purple-500 text-white py-2 px-6 rounded hover:bg-purple-600 focus:outline-none">Tambah</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
